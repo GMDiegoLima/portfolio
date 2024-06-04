@@ -1,0 +1,200 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 62.5%; /* 16*0.625 = 10px */
+    line-height: 1; /* distance between the lines */
+    /* background:
+        repeating-linear-gradient(150deg, hsl(255, 100%, 5%), hsl(0, 0%, 30%) 2%, transparent 1%, transparent 120px),
+        repeating-linear-gradient(30deg, hsl(255, 100%, 5%), hsl(0, 0%, 30%) 1%, transparent 1.5%, transparent 120px); */
+    background: linear-gradient(60deg, rgba(0,0,0,1) 0%, rgba(74,0,247,1) 51%, rgba(74,0,247,1) 70%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 243px 138px; */
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+}
+
+.hero-left {
+    display: flex;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'AkzidenzGrotesk', sans-serif;
+    margin: 10% 0 2% 0;
+    top: 50%;
+    width: 50%;
+}
+
+.hero-left > h1 {
+    margin: 0;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: black;
+    font-family: 'Druk Wide Bold', sans-serif;
+    text-shadow: 4px 0px 0 black;
+    font-size: 2rem;
+    margin: 0;
+    width: 95%;
+    perspective: 1000;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) rotateX(10deg) rotateY(10deg);
+}
+
+.hero-right > h1 > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.hero-right > h1 > a:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 4px 0px 0 black;
+    perspective: 1000;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) rotateX(30deg) rotateY(30deg);
+    transition-delay: 0;
+    transition: all 1s;
+}
+
+.hero-right > h1 > a:hover:after {
+    display: block;
+}
+/* .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-buttons > button {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4%;
+  box-shadow: #fff 4px 4px 0 0, black 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  overflow: visible;
+  padding: 0.75rem 1rem;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.hero-buttons > button:focus {
+    text-decoration: none;
+  }
+
+.hero-buttons > button:hover {
+    background-color: rgb(115, 255, 21);
+    color: black;
+    text-decoration: none;
+}
+
+.hero-buttons > button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+} */
+
+ul {
+   position: absolute;
+   display: flex;
+   justify-content: start;
+   bottom: 4%;
+   /* transform: rotate(-25deg) skew(25deg); */
+   transform-style: preserve-3d;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px;
+}
+ul li:before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: hsl(0, 0%, 0%);
+  transform-origin: top;
+  transform: skewX(-41deg);
+}
+ul li:after{
+  content: '';
+  position: absolute;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: hsl(0, 0%, 0%);
+  transform-origin: right;
+  transform: skewY(-49deg);
+}
+ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: hsl(0, 0%, 0%);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  transition: 1.5s ease-out;
+}
+ul li:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+ul li:hover span:nth-child(4){
+  transform: translate(9px, -15px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(3){
+  transform: translate(6px, -10px);
+  opacity: .8;
+}
+ul li:hover span:nth-child(2){
+  transform: translate(3px, -5px);
+  opacity: .6;
+}
+ul li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: .4;
+  }
+ul li:nth-child(1):hover span{
+  background: #7289DA;
+}
+ul li:nth-child(2):hover span{
+  background: #ff5b5b;
+}
+ul li:nth-child(3):hover span{
+  background: #ff8b2d;
+}
