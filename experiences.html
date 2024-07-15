@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Diego Lima Portfolio. Specializing in programming Full Stack and Data Analyse">
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Diego Lima - Experiences</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav id="nav"></nav>
+      <div class="stars"></div>
+      <script>
+        $(function(){$("#nav").load("ejs/side_navbar.ejs");});
+      </script>
+      <div class="middle-content">
+        <h1 style="display: flex; justify-content: center; text-indent: 0%;">Freelance</h1>
+        <p>After finishing high school, I dedicated 6 years studying and working as a 3D environment artist. During this period, I joined in various freelance projects for different organizations, primarily within the game industry, but also for animation studios and products visualization.</p>
+        <p>On 2021 i started studying programming fundamentals with python to do a transition on my career while i keep working as 3D artist.</p>
+        <br>
+        <h1 style="display: flex; justify-content: center; text-indent: 0%;">Koyn - Personal Python Data Visualization Project</h1>
+        <img src="images/koynmockup.png" alt="Koyn Project" style="display: flex; border-radius: 10px; width: 1000px; height: 600px; object-fit: none; object-position: 10% 32%; margin: 0 auto;">
+        <p style="display: flex; color: hsl(0, 0%, 50%); justify-content: center; text-indent: 0%; letter-spacing: 1px;">Koyn landing page website</p>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column;">
+                <p>Koyn is a discord market data visualization bot for the albion online game which achieved the mark of 1 million unique users and 15 thousand servers with access to the bot on discord. The main objective with this project was to consume the market data from the Albion Data Project, a open source project done by the albion online community, and create a graph visualization of the variation of prices, for the game items, in the discord and make it a profitable project using a subscription payment gateway (stripe).</p>
+                <p>This project was entirely done by myself using Python, to create the logo i used Canvas, to host the bot and the website i used Google CLoud Platform, for the website i used flask, html and css, to create the discord bot i used the discordpy library, to create the subscription system i used stripe as the payment gateway and for the data visualization i used matplotlib, numpy, pandas, seaborn with the data from the Albion Data Project</p>
+                <p>I also used the python translators library to allow the users choose the language in which they want to see the data visualization result and mongodb to store the language preference of which discord server and the data of subscribers to show them on the koyn website.</p>
+                <p>You can check the Koyn website accessing <a href="https://koyn.online/" target="_blank" style="text-decoration: none; color: rgb(137, 184, 255);">https://koyn.online/</a> and know more about the koyn discord bot market data visualization project.</p>
+            </div>
+            <img src="images/koynphone.png" alt="Koyn Discord Graph" style="display: flex; border-radius: 10px; width: 312px; height: 444px; margin: 0 auto;">
+        </div>
+        <h1 style="display: flex; justify-content: center; text-indent: 0%;">JavaScript - Express.js Website Portfolio</h1>
+        <p>I used JavaScript with the Express.js framework with html and css to create this website portfolio and used google cloud platform to host the website.</p>
+      </div>
+      <div style="border-inline: 3px solid hsl(220, 10%, 9%); height: 100vh; margin-left: 2%;"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Diego Lima Portfolio. Specializing in programming Full Stack and Data Analyse">
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+    <title>Diego Lima - Skills</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav id="nav"></nav>
+      <div class="stars"></div>
+      <script>
+        $(function(){$("#nav").load("ejs/side_navbar.ejs");});
+      </script>
+      <div class="middle-content">
+        <div id="languagesChart" style="width: 99%;"></div>
+        <script src="js/skills.js"></script>
+        <h1>Frameworks / Libraries</h1>
+        <p>Python: Discordpy, Flask, Django, Matplotlib, Plotly, Seaborn, Pandas, NumPy, Psutil, Pillow</p>
+        <p>JavaScript: Node.js, Express.js, Plotly, Electron</p>
+        <br>
+        <h1>Others</h1>
+        <p>Git / GitHub</p>
+        <p>Google Cloud Platform</p>
+        <p>Unreal Engine 4</p>
+        <p>Unity</p>
+        <p>Godot</p>
+      </div>
+    </div>
+  </body>
+</html>
