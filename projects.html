@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Diego Lima Portfolio. Specializing in programming Full Stack and Data Analyse">
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Diego Lima - Projects</title>
+  </head>
+  <body>
+
+    <script>
+    $(function() {
+      const allArticles = document.getElementById("allArticles");
+      const article_modal = document.getElementById("articleModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalImg = document.getElementById("modalImg");
+      const modalContent = document.getElementById("modalContent");
+      const backButton = document.getElementById("backButton");
+
+      $.getJSON('projects.json', function(data) {
+           $.each(data.projects, function(i, json_article) {
+            const article = document.createElement("div");
+            article.classList.add("article")
+            allArticles.appendChild(article)
+
+            const image = document.createElement("img");
+            image.src = json_article.image_path;
+            image.classList.add("articleImage");
+            article.appendChild(image)
+
+            const article_content = document.createElement("div");
+            article_content.classList.add("article-content")
+            article.appendChild(article_content)
+
+            const title = document.createElement("h1");
+            title.appendChild(document.createTextNode(json_article.title));
+            article_content.appendChild(title)
+
+            const description = document.createElement("p");
+            description.appendChild(document.createTextNode(json_article.description));
+            article_content.appendChild(description)
+
+            const tags = document.createElement("p");
+            tags.appendChild(document.createTextNode(json_article.tags));
+            tags.classList.add("articleTags")
+            article_content.appendChild(tags)
+
+            article.addEventListener("click", function() {
+              openModal(json_article);
+            });
+        });
+        backButton.addEventListener("click", closeModal);
+      });
+
+      function openModal(articleData) {
+        modalTitle.innerText = articleData.title;
+        modalImg.src = articleData.image_path;
+        modalImg.classList.add("modalImage");
+        modalContent.innerHTML = articleData.content; // HTML bruto para manter tags de formatação
+        allArticles.style.display = "none";  // Esconde a lista de artigos
+        articleModal.style.display = "block";  // Mostra o modal
+      }
+
+      function closeModal() {
+        articleModal.style.display = "none";
+        allArticles.style.display = "block";
+      }
+    });
+    </script>
+
+    <div class="hero">
+      <div class="stars"></div>
+      <div class="articleModal" id="articleModal" style="display: none;">
+        <a id="backButton" class="backButton" style="display: flex; color: white; margin-left: 60px; margin-top: 20px; text-decoration: none; align-items: center; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" height="54" width="42" viewBox="0 0 320 512"><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg> Projects</a>
+        <h1 id="modalTitle"></h1>
+        <img id="modalImg">
+        <p id="modalContent" class="modalContent"></p>
+      </div>
+
+      <div class="allArticles" id="allArticles">
+        <a href="." style="display: flex; color: white; text-decoration: none; align-items: center; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" height="54" width="42" viewBox="0 0 320 512"><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg> Home Page</a>
+      </div>
+    </div>
+  </body>
+</html>

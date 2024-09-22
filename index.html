@@ -7,21 +7,41 @@
     <meta name="description" content="Diego Lima Portfolio. Specializing in programming Full Stack and Data Analyse">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Diego Lima - Portfolio</title>
   </head>
   <body>
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
     <div class="hero">
-      <img src="images/rocket.gif" alt="Rocket with data" style="width: 50vh; height: 50vh; margin-top: 2vh;">
-      <h1 style="line-height: 120%; font-size: 5rem; white-space: nowrap; background-image: linear-gradient(45deg, #a200ff, #b3ff00); background-clip: text; -webkit-text-fill-color: transparent; margin: 0;">Diego Lima</h1>
-      <p style="margin-block: 22px;">Data Analyst</p>
-      <div id="nav"></div>
-      <script>
-        $(function(){$("#nav").load("navbar.html");});
-      </script>
+        <svg class="line">
+          <line stroke-dasharray="15, 15" x1="-15%" y1="100%" x2="25%" y2="0" style="stroke: hsl(0, 0%, 70%, 0.6); stroke-width:2"/>
+          <line stroke-dasharray="15, 15" x1="-10%" y1="100%" x2="30%" y2="0" style="stroke: hsla(0, 0%, 70%, 0.6); stroke-width:2"/>
+          <line stroke-dasharray="15, 15" x1="-5%" y1="100%" x2="35%" y2="0" style="stroke: hsl(0, 0%, 70%, 0.6); stroke-width:2"/>
+        </svg>
+        <div class="card">
+            <div class="top-card">
+                <img class="crop" src="images/me.jpg" alt="Diego Lima" style="border: black 2px solid; border-radius: 50%; width: 150px; height: 150px;">
+                <h1>Diego Lima</h1>
+                <hr/>
+                <h2>Data Analyst</h2>
+            </div>
+            <div class="bottom-card">
+                <a target="_blank" href="mailto:diegosalima@outlook.com" title="diegosalima@outlook.com" class="fa-solid fa-envelope" style="color: white;"></a>
+                <a target="_blank" href="https://discordapp.com/users/346480864894517259" title="dilima" class="fa-brands fa-discord" style="color: white;"></a>
+                <a target="_blank" href="https://t.me/datalima" title="datalima" class="fa-brands fa-telegram" style="color: white;"></a>
+                <a target="_blank" href="https://github.com/GMDiegoLima" title="GMDiegoLima" class="fa-brands fa-github" style="color: white;"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/3diego-lima/" title="3diego-lima" class="fa-brands fa-linkedin" style="color: white;"></a>
+            </div>
+        </div>
+        <div class="introduction">
+            <h1 style="font-size: 64px;">Hello,</h1>
+            <div class="intro-buttons">
+                <a href="skills"><button title="Check my skills">Skills</button></a>
+                <a href="projects"><button title="Check my projects">Projects</button></a>
+                <a target="_blank" href="Diego%20Lima%20-%20Resume.pdf" download style="text-decoration: none;"><button> Download Resume</button></a>
+            </div>
+            <p style="font-size: 20px; text-align: justify;">I am a data analyst with years of experience with Python and data scrape and visualization; i also have knowledge on JavaScript data analysis, full stack, web apps and software development. Experience with differents libraries in Python such as: pandas, matplotlib, beautifulsoup, discordpy and others... Already finished a big project with more than 950.000 unique users on discord.</p>
+        </div>
     </div>
   </body>
 </html>
