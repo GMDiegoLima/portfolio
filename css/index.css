@@ -2,7 +2,6 @@ body {
     width: auto;
     margin: 0 auto;
     color: white;
-    user-select: none;
     overflow: auto;
     background: radial-gradient(ellipse at bottom, hsl(236, 20%, 20%) 40%, #090a0f 100%);
     font-family: "Open Sans", sans-serif;
