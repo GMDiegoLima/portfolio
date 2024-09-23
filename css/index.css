@@ -5,9 +5,11 @@ body {
     user-select: none;
     overflow: auto;
     background: radial-gradient(ellipse at bottom, hsl(236, 20%, 20%) 40%, #090a0f 100%);
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {margin: 0;}
+h2 {margin: 0;}
 
 /* scrollbar style */
 ::-webkit-scrollbar {width: 10px;}
@@ -48,6 +50,7 @@ h1 {margin: 0;}
     border-top-right-radius: 20px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
     flex-grow: 0;
+    gap: 20px;
 }
 
 .bottom-card {
@@ -114,7 +117,7 @@ hr {
     width: 30%;
     border: 0;
     border-top: black 1px solid;
-    margin: 1em auto;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -127,7 +130,8 @@ hr {
     z-index: -1; /* Coloca atrás dos outros elementos */
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
     .hero {flex-direction: column; gap: 1em;}
+    .card {margin-top: 20px;}
     .introduction {width: 95%;}
 }
