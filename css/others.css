@@ -19,6 +19,16 @@ h1, h2, h3, p {margin-block: 0 auto; line-height: 1.3; letter-spacing: 0.4px;}
 ::-webkit-scrollbar-thumb {background: hsl(0, 0%, 15%);}
 ::-webkit-scrollbar-thumb:hover {background: hsl(0, 0%, 20%);}
 
+/* Google Translate tool */
+#google_translate_element {display: flex; justify-content: end;}
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:nth-of-type(1), div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:nth-of-type(2), div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:nth-of-type(3) {display:none;}
+div#google_translate_element div.goog-te-gadget-simple {margin:0px; padding:10px; display:inline-block; background-color:black; border:none; border-radius:10px; font-size:16px;}
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value {color:rgb(255, 0, 0);}
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value::after{content:"Translate Site"; padding-right:5px;}
+div#google_translate_element div.goog-te-gadget-simple img:nth-of-type(1) {display:none;}
+#\:0\.targetLanguage > span > a > span:nth-child(1) {color: white;}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {display: none;}
+
 .hero {
     display: flex;
     flex-direction: row;

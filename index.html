@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>Diego Lima - Portfolio</title>
   </head>
   <body>
@@ -18,6 +19,7 @@
           <line stroke-dasharray="15, 15" x1="-10%" y1="100%" x2="30%" y2="0" style="stroke: hsla(0, 0%, 70%, 0.6); stroke-width:2"/>
           <line stroke-dasharray="15, 15" x1="-5%" y1="100%" x2="35%" y2="0" style="stroke: hsl(0, 0%, 70%, 0.6); stroke-width:2"/>
         </svg>
+
         <div class="card">
             <div class="top-card">
                 <img class="crop" src="images/me.jpg" alt="Diego Lima" style="border: black 2px solid; border-radius: 50%; width: 150px; height: 150px;">
@@ -34,6 +36,13 @@
             </div>
         </div>
         <div class="introduction">
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,pt,es,fr,it,ar,de,el,iw,ja,ko,la,no,pl,sv,tr,uk,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+              }
+            </script>
+
             <h1 style="font-size: 64px;">Hello,</h1>
             <div class="intro-buttons">
                 <a href="skills"><button title="Check my skills">Skills</button></a>
