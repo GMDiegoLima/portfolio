@@ -5,6 +5,7 @@ body {
     overflow: auto;
     background: radial-gradient(ellipse at bottom, hsl(236, 20%, 20%) 40%, #090a0f 100%);
     font-family: "Open Sans", sans-serif;
+    top: 0px !important;
 }
 
 h1 {margin: 0;}
