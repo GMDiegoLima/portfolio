@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Landing Page with HTML and CSS",
+            "description": "A responsive landing page using HTML and CSS to showcase my web development skills. The page is clean, simple, and designed to provide a smooth user experience.",
+            "image_path": "images/bakerymockup2.png",
+            "content": "Recently, I developed a simple landing page using HTML and CSS to showcase my web development skills to potential clients. The page is designed to be clean, responsive, and functional, with a focus on providing a clear and engaging user experience.<br><br>By sticking to these core technologies, I was able to keep the codebase lightweight and efficient while maintaining flexibility for future updates. It's a great example of how basic web technologies can create polished and professional results.<br><a target='_blank' href='https://gmdiegolima.github.io/website-template/' style='color: #4575f7; text-decoration: none;'>📂 Check out the live demo here</a>",
+            "tags": "Website Development, Web Design, JavaScript, Html, Css"
+        },
+        {
             "title": "Python Data Visualization Discord Bot",
             "description": "Discord market data visualization bot for the albion online game which achieved the mark of 1 million unique users and 15 thousand servers with access to the bot on discord.",
             "image_path": "images/koynmockup.png",
