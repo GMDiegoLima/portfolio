@@ -111,6 +111,7 @@ div#google_translate_element div.goog-te-gadget-simple img:nth-of-type(1) {displ
 .articleModal {
     display: flex;
     text-align: center;
+    z-index: 99;
 }
 
 .modalContent {
